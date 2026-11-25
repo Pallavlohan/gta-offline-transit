@@ -4,14 +4,16 @@
 
 <br /><br />
 
-> **Google Maps dies in TTC tunnels. This doesn't.**
->
-> The first full Google Maps-style GTA transit planner, vector street map, and address search for Android that runs **100% offline**—with **zero internet permission** and **0% background battery drain**.
+<p><b>Google Maps dies in TTC tunnels. This doesn't.</b></p>
 
-[![Latest Release](https://img.shields.io/github/v/release/Pallavlohan/gta-offline-transit?style=for-the-badge&color=1a56db)](https://github.com/Pallavlohan/gta-offline-transit/releases/latest)
-[![Total Downloads](https://img.shields.io/github/downloads/Pallavlohan/gta-offline-transit/total?style=for-the-badge&color=0d9488)](https://github.com/Pallavlohan/gta-offline-transit/releases)
-[![Android 8.0+ arm64-v8a](https://img.shields.io/badge/Android-8.0%2B%20(arm64--v8a)-3ddc84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/Pallavlohan/gta-offline-transit/releases/latest)
-[![Zero Internet Permission](https://img.shields.io/badge/Internet%20Permission-NONE%20(0%25%20Tracking)-16a34a?style=for-the-badge)](#verify-zero-internet-privacy)
+<p>The first full Google Maps-style GTA transit planner, vector street map, and address search for Android that runs <b>100% offline</b>—with <b>zero internet permission</b> and <b>0% background battery drain</b>.</p>
+
+<p>
+  <a href="https://github.com/Pallavlohan/gta-offline-transit/releases/latest"><img src="https://img.shields.io/github/v/release/Pallavlohan/gta-offline-transit?style=for-the-badge&color=1a56db" height="25" alt="Latest Release" /></a>
+  <a href="https://github.com/Pallavlohan/gta-offline-transit/releases"><img src="https://img.shields.io/github/downloads/Pallavlohan/gta-offline-transit/total?style=for-the-badge&color=0d9488" height="25" alt="Total Downloads" /></a>
+  <a href="https://github.com/Pallavlohan/gta-offline-transit/releases/latest"><img src="https://img.shields.io/badge/Android-8.0%2B%20(arm64--v8a)-3ddc84?style=for-the-badge&logo=android&logoColor=white" height="25" alt="Android 8.0+ arm64-v8a" /></a>
+  <a href="#verify-zero-internet-privacy"><img src="https://img.shields.io/badge/Internet%20Permission-NONE%20(0%25%20Tracking)-16a34a?style=for-the-badge" height="25" alt="Zero Internet Permission" /></a>
+</p>
 
 <h3>
   <a href="https://github.com/Pallavlohan/gta-offline-transit/releases/latest">
@@ -25,22 +27,24 @@
 
 ---
 
-| 🚇 Tunnel-Proof Offline | 🔒 Mathematically Private | 🔋 0% Background Battery | 🗺️ Full GTHA Inside |
-|---|---|---|---|
-| `~327 ms` cold launch · Works in Airplane Mode | Zero `INTERNET` permission — OS-blocked tracking | Zero background GPS or services (`onPause` stops sensors) | `11` agencies · `989k` addresses · `50k` stores |
+| 🚇 **Tunnel-Proof Offline** | 🔒 **Mathematically Private** |
+|---|---|
+| `~327 ms` cold launch · Works in subway tunnels &amp; Airplane Mode | Zero `INTERNET` permission — OS-blocked tracking &amp; telemetry |
+| 🔋 **0% Background Battery** | 🗺️ **Full GTHA Inside** |
+| Zero background GPS or services (`onPause` stops all sensors) | `11` agencies · `989k` street addresses · `50k` stores &amp; landmarks |
 
 ---
 
 ## Why Switch from Google Maps / Transit?
 
-| Commuter Pain Point | GTA Offline Transit | Google Maps / Transit App |
+| Commuter Need | GTA Offline | Google Maps / Transit |
 |---|---|---|
 | **TTC subway tunnels & dead zones** | ✅ 100% — maps, search & routing | ❌ Transit routing & schedules die |
-| **Internet permission / tracking** | ✅ ZERO `INTERNET` permission | ❌ Constant account & location telemetry |
-| **Background battery drain** | ✅ 0% — sensors stop on lock | ❌ Background location & push services |
-| **Full street map + 50k stores + 989k addresses offline** | ✅ Built-in (zero extra downloads) | ❌ Limited / expires / no transit offline |
-| **Real bus branch letters (`96B`, `927B/927C`, `50A`) + 5-tab Nearby** | ✅ Instant (`< 50 ms`) | ⚠️ Requires mobile data |
-| **0%-battery `"Last Ride Home"` evening alert** | ✅ Built-in local alarm | ❌ Not built in |
+| **Internet permission / tracking** | ✅ ZERO `INTERNET` permission | ❌ Account & location telemetry |
+| **Background battery drain** | ✅ 0% — sensors stop on lock | ❌ Background GPS & push services |
+| **Full street map + 50k stores + 989k addresses offline** | ✅ Built-in (zero downloads) | ❌ Expires / no transit offline |
+| **Real bus branches (`96B`, `927B / 927C`, `50A`) + 5-tab Nearby** | ✅ Instant (`< 50 ms`) | ⚠️ Requires mobile data |
+| **0% battery `"Last Ride Home"` evening alert** | ✅ Built-in local alarm | ❌ Not built in |
 | **Real-time bus delays / live vehicle GPS** | ⚠️ Scheduled GTFS only (no internet) | ✅ Live when online |
 
 ---
@@ -115,8 +119,8 @@
 
 <table>
   <tr>
-    <td width="260" align="center">
-      <img src="screenshots/07_about_offline_privacy.png" width="230" alt="About &amp; Data Sources screen listing all 5 offline databases and Last ride home toggle" />
+    <td width="35%" align="center">
+      <img src="screenshots/07_about_offline_privacy.png" width="220" alt="About &amp; Data Sources screen listing all 5 offline databases and Last ride home toggle" />
     </td>
     <td valign="top">
       <p><b>Zero <code>INTERNET</code> permission. Zero <code>ACCESS_BACKGROUND_LOCATION</code>. Zero background services.</b></p>
