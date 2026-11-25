@@ -1,19 +1,21 @@
 <div align="center">
 
+<img src="assets/app_icon.png" width="96" height="96" alt="GTA Offline Transit app icon" />
+
 # GTA Offline Transit
 
-**100% offline Greater Toronto Area transit planner, street map, and timetable app for Android — works in subway tunnels, basements, and Airplane Mode with zero internet permission.**
+**Offline Toronto, TTC & GO Transit Planner + Street Map for Android — works in subway tunnels, basements, and Airplane Mode with zero internet permission.**
 
-[![Latest Release](https://img.shields.io/github/v/release/<YOUR_GITHUB_USER>/gta-offline-transit?style=for-the-badge&color=1a56db)](https://github.com/<YOUR_GITHUB_USER>/gta-offline-transit/releases/latest)
-[![Total Downloads](https://img.shields.io/github/downloads/<YOUR_GITHUB_USER>/gta-offline-transit/total?style=for-the-badge&color=0d9488)](https://github.com/<YOUR_GITHUB_USER>/gta-offline-transit/releases)
-[![Android 8.0+ arm64-v8a](https://img.shields.io/badge/Android-8.0%2B%20(arm64--v8a)-3ddc84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/<YOUR_GITHUB_USER>/gta-offline-transit/releases/latest)
+[![Latest Release](https://img.shields.io/github/v/release/Pallavlohan/gta-offline-transit?style=for-the-badge&color=1a56db)](https://github.com/Pallavlohan/gta-offline-transit/releases/latest)
+[![Total Downloads](https://img.shields.io/github/downloads/Pallavlohan/gta-offline-transit/total?style=for-the-badge&color=0d9488)](https://github.com/Pallavlohan/gta-offline-transit/releases)
+[![Android 8.0+ arm64-v8a](https://img.shields.io/badge/Android-8.0%2B%20(arm64--v8a)-3ddc84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/Pallavlohan/gta-offline-transit/releases/latest)
 [![Zero Internet Permission](https://img.shields.io/badge/Internet%20Permission-NONE%20(0%25%20Tracking)-16a34a?style=for-the-badge)](#verifiable-privacy--battery-discipline)
 
 <br />
 
-### [⬇️ Download Latest APK (Android)](https://github.com/<YOUR_GITHUB_USER>/gta-offline-transit/releases/latest)
+### [⬇️ Download Latest APK (Android)](https://github.com/Pallavlohan/gta-offline-transit/releases/latest)
 
-*All-in-One APK (`~143.7 MiB`): bundles the complete GTA vector street map, 989,215 addresses, 50,933 stores & landmarks, road-following pedestrian walk graph, 3,319 road-snapped transit routes, and schedules across all 11 GTHA transit agencies — **zero extra downloads after install.***
+*All-in-One APK (`~144 MB` / `143.78 MiB`): bundles the complete GTA vector street map, 989,215 addresses, 50,933 stores & landmarks, walkable street graph, 3,319 road-snapped transit routes, and schedules across all 11 GTHA transit agencies — **zero extra downloads after install.***
 
 </div>
 
@@ -76,7 +78,10 @@
   - Tap-through **Stop Departures** & full curved **Route Schedules** with horizontal scrollable departure time tabs, `"Show previous stops"`, and `"Switch direction"`.
   - Offline search across **989,215 addresses** (with even/odd parity interpolation) and **50,933 stores, franchises, pharmacies, & landmarks** with typo tolerance and multi-pin map carousels.
   - Road-following **dotted pedestrian walks**, **Heading-Up** live compass cone, foreground-only **live GPS stop-rail tracking** with 1-stop exit vibration, **Saved Places** (`Home`, `Work`, `Favorites`, `Want to go`, starred stops), and 0%-battery **"Last ride home"** evening reminder.
-- **Verifiable Privacy & Battery Discipline:** Zero `INTERNET` permission, zero `ACCESS_BACKGROUND_LOCATION`, zero analytics, and zero background services — your app literally cannot phone home.
+
+## Verifiable Privacy & Battery Discipline
+
+Zero `INTERNET` permission, zero `ACCESS_BACKGROUND_LOCATION`, zero analytics, and zero background services — your app literally cannot phone home.
 
 <details>
 <summary><b>Verify Permissions &amp; Checksums Yourself (<code>aapt2</code> &amp; <code>apksigner</code> output)</b></summary>
@@ -96,7 +101,7 @@ uses-permission: name='com.gta.offlinetransit.DYNAMIC_RECEIVER_NOT_EXPORTED_PERM
 
 *(Note: `ACCESS_NETWORK_STATE` / `ACCESS_WIFI_STATE` are AndroidX/MapLibre library metadata flags; `android.permission.INTERNET`, `ACCESS_BACKGROUND_LOCATION`, `SCHEDULE_EXACT_ALARM`, and `RECEIVE_BOOT_COMPLETED` are explicitly stripped/absent.)*
 
-- **v1.0.0 APK SHA-256:** `60ab9085486555e3e737d823cbbff8d58086cd4e5761d2d93eb3db6b48b0892f`
+- **v1.0.0 APK SHA-256:** `c88e0c4a8dccdfaccf7d0a2dde621b6c133cf7f0cb02e62803346e33eca2d080`
 - **Release Certificate SHA-256:** `84b72575610dc24b340a4854f53b24befe0d263ef3f7a1d416e048562004886b`
 
 </details>
@@ -105,18 +110,18 @@ uses-permission: name='com.gta.offlinetransit.DYNAMIC_RECEIVER_NOT_EXPORTED_PERM
 
 ## 3-Step Install Guide
 
-1. **Download `.apk`:** Tap **[Download Latest APK](https://github.com/<YOUR_GITHUB_USER>/gta-offline-transit/releases/latest)** and download `GTA-Offline-Transit-v1.0.0-arm64.apk` (`143.72 MiB`).
+1. **Download `.apk`:** Tap **[Download Latest APK](https://github.com/Pallavlohan/gta-offline-transit/releases/latest)** and download `GTA-Offline-Transit-v1.0.0-arm64.apk` (`143.78 MiB`).
 2. **Allow install from browser:** Open the downloaded file in Android and allow installing apps from your browser/files app when prompted.
 3. **Open & ride:** Launch **GTA Offline Transit** — first run unpacks the bundled offline map & search databases (~0.5 seconds), and you're ready to plan anywhere offline!
 
 > **Tip — Automatic Monthly Schedule Updates via [Obtainium](https://github.com/ImranR98/Obtainium):**
-> Add `https://github.com/<YOUR_GITHUB_USER>/gta-offline-transit` in Obtainium to get instant notifications whenever a monthly schedule release drops, with signing-certificate verification built in.
+> Add `https://github.com/Pallavlohan/gta-offline-transit` in Obtainium to get instant notifications whenever a monthly schedule release drops, with signing-certificate verification built in.
 
 ---
 
 ## Monthly Schedule Updates
 
-Transit schedules across the 11 GTHA agencies change seasonally and monthly. Updated standalone releases are published on the [Releases](https://github.com/<YOUR_GITHUB_USER>/gta-offline-transit/releases) page with automated per-agency schedule coverage deltas (`valid through` dates, route/pattern/trip changes) and `SHA256SUMS.txt` checksums.
+Transit schedules across the 11 GTHA agencies change seasonally and monthly. Updated standalone releases are published on the [Releases](https://github.com/Pallavlohan/gta-offline-transit/releases) page with automated per-agency schedule coverage deltas (`valid through` dates, route/pattern/trip changes) and `SHA256SUMS.txt` checksums.
 
 See [CHANGELOG.md](CHANGELOG.md) for release history and [PRIVACY.md](PRIVACY.md) for the full technical permission breakdown.
 
@@ -139,3 +144,7 @@ See [CHANGELOG.md](CHANGELOG.md) for release history and [PRIVACY.md](PRIVACY.md
   - **Hamilton Street Railway (HSR):** Contains public sector data made available under the City of Hamilton's Open Data Licence.
 
 Full licence notices are included in [LICENSE_DATA_NOTICES.md](LICENSE_DATA_NOTICES.md).
+
+---
+
+<sub>Maintained by **Pallav** · 100% offline Android transit & maps for Toronto and the GTHA.</sub>
