@@ -1,90 +1,140 @@
 <div align="center">
 
-<img src="assets/app_icon.png" width="96" height="96" alt="GTA Offline Transit app icon" />
+<img src="assets/hero_banner.png" width="100%" alt="GTA Offline Transit — Replace Google Maps for GTA Transit — 100% Offline" />
 
-# GTA Offline Transit
+<br /><br />
 
-**Offline Toronto, TTC & GO Transit Planner + Street Map for Android — works in subway tunnels, basements, and Airplane Mode with zero internet permission.**
+> **Google Maps dies in TTC tunnels. This doesn't.**
+>
+> The first full Google Maps-style GTA transit planner, vector street map, and address search for Android that runs **100% offline**—with **zero internet permission** and **0% background battery drain**.
 
 [![Latest Release](https://img.shields.io/github/v/release/Pallavlohan/gta-offline-transit?style=for-the-badge&color=1a56db)](https://github.com/Pallavlohan/gta-offline-transit/releases/latest)
 [![Total Downloads](https://img.shields.io/github/downloads/Pallavlohan/gta-offline-transit/total?style=for-the-badge&color=0d9488)](https://github.com/Pallavlohan/gta-offline-transit/releases)
 [![Android 8.0+ arm64-v8a](https://img.shields.io/badge/Android-8.0%2B%20(arm64--v8a)-3ddc84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/Pallavlohan/gta-offline-transit/releases/latest)
-[![Zero Internet Permission](https://img.shields.io/badge/Internet%20Permission-NONE%20(0%25%20Tracking)-16a34a?style=for-the-badge)](#verifiable-privacy--battery-discipline)
+[![Zero Internet Permission](https://img.shields.io/badge/Internet%20Permission-NONE%20(0%25%20Tracking)-16a34a?style=for-the-badge)](#verify-zero-internet-privacy)
 
-<br />
+<h3>
+  <a href="https://github.com/Pallavlohan/gta-offline-transit/releases/latest">
+    ⬇️ Download GTA Offline Transit v1.0.0 (Android APK · 144 MB All-in-One)
+  </a>
+</h3>
 
-### [⬇️ Download Latest APK (Android)](https://github.com/Pallavlohan/gta-offline-transit/releases/latest)
-
-*All-in-One APK (`~144 MB` / `143.78 MiB`): bundles the complete GTA vector street map, 989,215 addresses, 50,933 stores & landmarks, walkable street graph, 3,319 road-snapped transit routes, and schedules across all 11 GTHA transit agencies — **zero extra downloads after install.***
+<sub><i>One download. Zero setup. Every GTA street, store &amp; bus schedule works instantly in Airplane Mode.</i></sub>
 
 </div>
 
 ---
 
-## Showcase
+| 🚇 Tunnel-Proof Offline | 🔒 Mathematically Private | 🔋 0% Background Battery | 🗺️ Full GTHA Inside |
+|---|---|---|---|
+| `~327 ms` cold launch · Works in Airplane Mode | Zero `INTERNET` permission — OS-blocked tracking | Zero background GPS or services (`onPause` stops sensors) | `11` agencies · `989k` addresses · `50k` stores |
+
+---
+
+## Why Switch from Google Maps / Transit?
+
+| Commuter Pain Point | GTA Offline Transit | Google Maps / Transit App |
+|---|---|---|
+| **TTC subway tunnels & dead zones** | ✅ 100% — maps, search & routing | ❌ Transit routing & schedules die |
+| **Internet permission / tracking** | ✅ ZERO `INTERNET` permission | ❌ Constant account & location telemetry |
+| **Background battery drain** | ✅ 0% — sensors stop on lock | ❌ Background location & push services |
+| **Full street map + 50k stores + 989k addresses offline** | ✅ Built-in (zero extra downloads) | ❌ Limited / expires / no transit offline |
+| **Real bus branch letters (`96B`, `927B/927C`, `50A`) + 5-tab Nearby** | ✅ Instant (`< 50 ms`) | ⚠️ Requires mobile data |
+| **0%-battery `"Last Ride Home"` evening alert** | ✅ Built-in local alarm | ❌ Not built in |
+| **Real-time bus delays / live vehicle GPS** | ⚠️ Scheduled GTFS only (no internet) | ✅ Live when online |
+
+---
+
+## Inside the App
 
 <table>
   <tr>
     <td align="center" width="33%">
-      <img src="screenshots/01_home_map.png" width="260" alt="Offline GTA vector street map with bus and subway stops" /><br />
-      <b>Offline Street Map &amp; Stops</b><br />
-      <sub>Vector buildings, street labels, TTC rail/bus icons &amp; rapid transit backbone</sub>
+      <img src="screenshots/01_home_map.png" width="240" alt="Offline GTA vector street map with bus and subway stops" /><br />
+      <b>Offline GTA Street Map</b>
     </td>
     <td align="center" width="33%">
-      <img src="screenshots/02_route_results.png" width="260" alt="Split-screen offline route results with branch badges" /><br />
-      <b>Door-to-Door Trip Routing</b><br />
-      <sub>Stacked durations, branch badges (<code>927B / 927C / 927D</code>), &amp; map pills</sub>
+      <img src="screenshots/02_route_results.png" width="240" alt="Door-to-door trip routing with branch badges" /><br />
+      <b>Door-to-Door Branch Routing</b>
     </td>
     <td align="center" width="33%">
-      <img src="screenshots/03_route_details_rail.png" width="260" alt="Expanded vertical rail timeline and dotted walk leg" /><br />
-      <b>Vertical Rail &amp; Street Walks</b><br />
-      <sub>Centered intermediate stop dots &amp; road-following blue dotted walks</sub>
+      <img src="screenshots/03_route_details_rail.png" width="240" alt="Live GPS vertical rail timeline and dotted road walk leg" /><br />
+      <b>Live GPS Rail &amp; Road Walks</b>
     </td>
   </tr>
   <tr>
     <td align="center" width="33%">
-      <img src="screenshots/04_nearby_5tab.png" width="260" alt="5-tab Nearby departures board" /><br />
-      <b>5-Tab Nearby Departures</b><br />
-      <sub><code>Suggested | Train | Tram | Bus | Subway</code> with 2-direction cards</sub>
+      <img src="screenshots/04_nearby_5tab.png" width="240" alt="5-tab Nearby departures board" /><br />
+      <b>5-Tab Nearby Departures</b>
     </td>
     <td align="center" width="33%">
-      <img src="screenshots/05_route_schedule_map.png" width="260" alt="2-step Route Trip Schedule with Brampton 50A on map" /><br />
-      <b>Route Trip Schedules</b><br />
-      <sub>Horizontal departure tabs, <code>Show previous stops</code> &amp; full curved route</sub>
+      <img src="screenshots/05_route_schedule_map.png" width="240" alt="Curved route map and horizontal departure time tabs" /><br />
+      <b>Curved Route &amp; Time Tabs</b>
     </td>
     <td align="center" width="33%">
-      <img src="screenshots/06_franchise_multipin.png" width="260" alt="Multi-pin offline franchise search around Downtown Toronto" /><br />
-      <b>Offline Multi-Pin Search</b><br />
-      <sub>Search 50k+ stores &amp; franchises with synced cards &amp; nearby transit</sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" colspan="3">
-      <img src="screenshots/07_about_offline_privacy.png" width="260" alt="About screen listing all 5 offline databases and Last ride home toggle" /><br />
-      <b>All-Offline Databases &amp; 0%-Battery Controls</b><br />
-      <sub>5 self-contained offline databases, 11 agency windows, &amp; Last ride home reminder</sub>
+      <img src="screenshots/06_franchise_multipin.png" width="240" alt="Offline store and multi-pin franchise search" /><br />
+      <b>Offline Store &amp; Multi-Pin Search</b>
     </td>
   </tr>
 </table>
 
 ---
 
-## Why GTA Commuters Use It
+## Built for Daily GTA Commuters
 
-- **Works Underground & In Airplane Mode:** Instant offline door-to-door RAPTOR routing (`Best` / `Fastest` / `Less walking` / `Fewer transfers`), `Leave` / `Arrive` / `Last` trip wheel picker, and `"Also at ..."` upcoming departures — zero data connection required.
-- **11 GTHA Agencies in One Place:** **TTC** (including Line 5 Eglinton & Line 6 Finch West LRT), **GO Transit**, **UP Express**, **MiWay**, **Brampton Transit (Züm)**, **YRT (Viva)**, **Durham Region Transit (DRT)**, **Oakville Transit**, **Burlington Transit**, **Milton Transit**, and **HSR** — preserving real branch letters (`96B`, `927B / 927D`, `50A`).
-- **Familiar Google Maps Feel, Offline Superpowers:**
-  - 5-tab **Nearby Departures** (`Suggested | Train | Tram | Bus | Subway`) with 2-direction grouped cards & GO/Subway station boards.
-  - Tap-through **Stop Departures** & full curved **Route Schedules** with horizontal scrollable departure time tabs, `"Show previous stops"`, and `"Switch direction"`.
-  - Offline search across **989,215 addresses** (with even/odd parity interpolation) and **50,933 stores, franchises, pharmacies, & landmarks** with typo tolerance and multi-pin map carousels.
-  - Road-following **dotted pedestrian walks**, **Heading-Up** live compass cone, foreground-only **live GPS stop-rail tracking** with 1-stop exit vibration, **Saved Places** (`Home`, `Work`, `Favorites`, `Want to go`, starred stops), and 0%-battery **"Last ride home"** evening reminder.
+- **Door-to-door offline routing (`Best` / `Fastest` / `Less walking` / `Fewer transfers` + `Leave` / `Arrive` / `Last`):** Covers all **11 GTHA agencies** including **TTC (with Line 5 Eglinton &amp; Line 6 Finch West)**, GO Transit, UP Express, MiWay, Brampton Transit (Züm), YRT (Viva), DRT, Oakville, Burlington, Milton, and HSR (`28,657` stops · `746` routes · `3,329` patterns · `322,507` trips).
+- **Familiar Google Maps muscle memory:** Tap any street stop &rarr; Departures &rarr; full curved route map (`99.7%` road-following shapes) with horizontal departure time tabs and exact branch letters (`96B`, `927B / 927C`, `50A`).
+- **Find anything offline (`< 50 ms`):** Instant search across **989,215 street addresses** and **50,933 stores &amp; landmarks** (Tim Hortons, Walmart, pharmacies, colleges) with typo tolerance and walkable street paths.
+- **Ride hands-free:** Heading-Up live compass cone, Saved Places, and foreground GPS tracking down the vertical stop rail with a **1-stop exit vibration**.
+- **Never miss the last ride home:** Automatic 0%-battery check after 8:00 p.m. when you're &gt;1 km from Home, offering a 1-tap local alarm 10 minutes before you must leave.
 
-## Verifiable Privacy & Battery Discipline
+---
 
-Zero `INTERNET` permission, zero `ACCESS_BACKGROUND_LOCATION`, zero analytics, and zero background services — your app literally cannot phone home.
+## Brutally Honest Pros &amp; Cons
+
+| ✅ Best For (Pros) | ⚠️ Honest Trade-Offs (Cons) |
+|---|---|
+| **Subway &amp; GO commuters** hitting station tunnels and concrete dead zones | **Official scheduled GTFS timetables only** — no live bus delays or short-turns (by design, since there is zero internet permission) |
+| **Prepaid or low-data plans** — zero mobile data needed for maps, search, or routing | **Android `8.0+` (`arm64-v8a`) only** — no iOS or 32-bit builds |
+| **Privacy purists** — OS-enforced zero network access (`INTERNET` permission absent) | **`~144 MB` (`143.78 MiB`) APK** — the entire GTA vector map, addresses, walk graph, and 11 agency feeds live inside one file (zero extra downloads) |
+| **Backup offline phone, visitors &amp; long battery days** — 0% background drain | **Closed-source APK for now** — full manifest permissions and SHA-256 checksums are published below for independent verification |
+
+---
+
+## 3-Step Install (10 Seconds)
+
+1. **Download:** Grab `GTA-Offline-Transit-v1.0.0-arm64.apk` (`143.78 MiB`) from **[Latest Release](https://github.com/Pallavlohan/gta-offline-transit/releases/latest)**.
+2. **Install:** Tap the downloaded `.apk` and allow installs from your browser or Files app.
+3. **Ride offline:** Open once (~2 sec automatic offline unpack) and plan anywhere in Airplane Mode.
+
+> **Auto-updates for monthly schedules:** Add `https://github.com/Pallavlohan/gta-offline-transit` in **[Obtainium](https://github.com/ImranR98/Obtainium)** to get notified whenever new GTFS schedule packs drop, with signing-certificate verification.
+
+---
+
+## Verify Zero-Internet Privacy
+
+<table>
+  <tr>
+    <td width="260" align="center">
+      <img src="screenshots/07_about_offline_privacy.png" width="230" alt="About &amp; Data Sources screen listing all 5 offline databases and Last ride home toggle" />
+    </td>
+    <td valign="top">
+      <p><b>Zero <code>INTERNET</code> permission. Zero <code>ACCESS_BACKGROUND_LOCATION</code>. Zero background services.</b></p>
+      <p>Your phone's operating system physically blocks this app from making network connections—it cannot phone home, send analytics, or leak your searches or location.</p>
+      <p><b>5 Self-Contained Offline Databases:</b></p>
+      <ul>
+        <li><code>gta_basemap.pmtiles</code> — GTA vector street map</li>
+        <li><code>gta_transit.db</code> — 11 GTHA agency schedules &amp; transfers</li>
+        <li><code>gta_shapes.db</code> — 3,319 / 3,329 road-snapped route shapes</li>
+        <li><code>gta_addresses.db</code> — 989,215 addresses + 50,933 stores &amp; POIs</li>
+        <li><code>gta_walk_graph.db</code> — walkable pedestrian street network</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 <details>
-<summary><b>Verify Permissions &amp; Checksums Yourself (<code>aapt2</code> &amp; <code>apksigner</code> output)</b></summary>
+<summary><b>Verify APK Permissions &amp; SHA-256 Checksums Yourself (<code>aapt2</code> &amp; <code>apksigner</code>)</b></summary>
 
 ```text
 $ aapt2 dump permissions GTA-Offline-Transit-v1.0.0-arm64.apk
@@ -99,7 +149,7 @@ permission: com.gta.offlinetransit.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 uses-permission: name='com.gta.offlinetransit.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'
 ```
 
-*(Note: `ACCESS_NETWORK_STATE` / `ACCESS_WIFI_STATE` are AndroidX/MapLibre library metadata flags; `android.permission.INTERNET`, `ACCESS_BACKGROUND_LOCATION`, `SCHEDULE_EXACT_ALARM`, and `RECEIVE_BOOT_COMPLETED` are explicitly stripped/absent.)*
+*(Note: `ACCESS_NETWORK_STATE` / `ACCESS_WIFI_STATE` are standard AndroidX/MapLibre library metadata flags; `android.permission.INTERNET`, `ACCESS_BACKGROUND_LOCATION`, `SCHEDULE_EXACT_ALARM`, and `RECEIVE_BOOT_COMPLETED` are explicitly stripped/absent.)*
 
 - **v1.0.0 APK SHA-256:** `c88e0c4a8dccdfaccf7d0a2dde621b6c133cf7f0cb02e62803346e33eca2d080`
 - **Release Certificate SHA-256:** `84b72575610dc24b340a4854f53b24befe0d263ef3f7a1d416e048562004886b`
@@ -108,43 +158,4 @@ uses-permission: name='com.gta.offlinetransit.DYNAMIC_RECEIVER_NOT_EXPORTED_PERM
 
 ---
 
-## 3-Step Install Guide
-
-1. **Download `.apk`:** Tap **[Download Latest APK](https://github.com/Pallavlohan/gta-offline-transit/releases/latest)** and download `GTA-Offline-Transit-v1.0.0-arm64.apk` (`143.78 MiB`).
-2. **Allow install from browser:** Open the downloaded file in Android and allow installing apps from your browser/files app when prompted.
-3. **Open & ride:** Launch **GTA Offline Transit** — first run unpacks the bundled offline map & search databases (~0.5 seconds), and you're ready to plan anywhere offline!
-
-> **Tip — Automatic Monthly Schedule Updates via [Obtainium](https://github.com/ImranR98/Obtainium):**
-> Add `https://github.com/Pallavlohan/gta-offline-transit` in Obtainium to get instant notifications whenever a monthly schedule release drops, with signing-certificate verification built in.
-
----
-
-## Monthly Schedule Updates
-
-Transit schedules across the 11 GTHA agencies change seasonally and monthly. Updated standalone releases are published on the [Releases](https://github.com/Pallavlohan/gta-offline-transit/releases) page with automated per-agency schedule coverage deltas (`valid through` dates, route/pattern/trip changes) and `SHA256SUMS.txt` checksums.
-
-See [CHANGELOG.md](CHANGELOG.md) for release history and [PRIVACY.md](PRIVACY.md) for the full technical permission breakdown.
-
----
-
-## Open Data & Map Attributions
-
-- **Offline Map Tiles & Vector Style:** Map tiles generated with [Planetiler](https://github.com/onthegomap/planetiler) using the OpenMapTiles schema from © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors (**ODbL**); rendered offline with [MapLibre Native](https://maplibre.org/).
-- **Offline Address & POI Search / Walk Graph:** Addresses, places, and walkable street network © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors (**ODbL**).
-- **Transit Schedules & Shapes (11 GTHA Agencies):**
-  - **GO Transit & UP Express:** Contains public sector information licensed under the Open Government Licence – Ontario – Metrolinx.
-  - **TTC (Toronto Transit Commission):** Contains information licensed under the Open Government Licence – Toronto.
-  - **MiWay (City of Mississauga):** Contains information licensed under the Open Government Licence – City of Mississauga.
-  - **Brampton Transit (City of Brampton):** Contains data provided by the City of Brampton under Creative Commons Attribution 4.0 International (CC BY 4.0).
-  - **Durham Region Transit (DRT):** Contains public sector information made available under The Regional Municipality of Durham's Open Data Licence.
-  - **York Region Transit (YRT / Viva):** Contains public transit information made available under YRT's Open Data Licence.
-  - **Oakville Transit:** Contains information licensed under the Open Government Licence – Town of Oakville.
-  - **Burlington Transit:** Contains information licensed under the Open Government Licence – City of Burlington.
-  - **Milton Transit:** Contains public transit schedule data made available via Metrolinx / Milton Transit open data.
-  - **Hamilton Street Railway (HSR):** Contains public sector data made available under the City of Hamilton's Open Data Licence.
-
-Full licence notices are included in [LICENSE_DATA_NOTICES.md](LICENSE_DATA_NOTICES.md).
-
----
-
-<sub>Maintained by **Pallav** · 100% offline Android transit & maps for Toronto and the GTHA.</sub>
+[Privacy Policy](PRIVACY.md) · [Changelog](CHANGELOG.md) · [Open Data &amp; Map Attributions](LICENSE_DATA_NOTICES.md) · Monthly GTFS updates published on [Releases](https://github.com/Pallavlohan/gta-offline-transit/releases) · Built by **Pallav**
