@@ -39,13 +39,13 @@
 
 | Commuter Need | GTA Offline | Google Maps / Transit |
 |---|---|---|
-| **TTC subway tunnels & dead zones** | ✅ 100% — maps, search & routing | ❌ Transit routing & schedules die |
-| **Internet permission / tracking** | ✅ ZERO `INTERNET` permission | ❌ Account & location telemetry |
-| **Background battery drain** | ✅ 0% — sensors stop on lock | ❌ Background GPS & push services |
-| **Full street map + 50k stores + 989k addresses offline** | ✅ Built-in (zero downloads) | ❌ Expires / no transit offline |
-| **Real bus branches (`96B`, `927B / 927C`, `50A`) + 5-tab Nearby** | ✅ Instant (`< 50 ms`) | ⚠️ Requires mobile data |
-| **0% battery `"Last Ride Home"` evening alert** | ✅ Built-in local alarm | ❌ Not built in |
-| **Real-time bus delays / live vehicle GPS** | ⚠️ Scheduled GTFS only (no internet) | ✅ Live when online |
+| **TTC subway tunnels & dead zones** | ✅ 100% — maps, search & routing | ❌ Transit routing dies |
+| **Internet permission / tracking** | ✅ ZERO `INTERNET` permission | ❌ Telemetry & tracking |
+| **Background battery drain** | ✅ 0% — stops on lock | ❌ Bg GPS & push |
+| **Street map + 50k stores + 989k addresses offline** | ✅ Built-in (zero downloads) | ❌ No transit offline |
+| **Bus branches (`96B`, `927B / 927C`, `50A`) + Nearby** | ✅ Instant (`< 50 ms`) | ⚠️ Needs data |
+| **0% battery `"Last Ride Home"` evening alert** | ✅ Local alarm built in | ❌ Not built in |
+| **Real-time bus delays / live GPS** | ⚠️ Scheduled GTFS only | ✅ Live online |
 
 ---
 
@@ -117,25 +117,19 @@
 
 ## Verify Zero-Internet Privacy
 
-<table>
-  <tr>
-    <td width="35%" align="center">
-      <img src="screenshots/07_about_offline_privacy.png" width="220" alt="About &amp; Data Sources screen listing all 5 offline databases and Last ride home toggle" />
-    </td>
-    <td valign="top">
-      <p><b>Zero <code>INTERNET</code> permission. Zero <code>ACCESS_BACKGROUND_LOCATION</code>. Zero background services.</b></p>
-      <p>Your phone's operating system physically blocks this app from making network connections—it cannot phone home, send analytics, or leak your searches or location.</p>
-      <p><b>5 Self-Contained Offline Databases:</b></p>
-      <ul>
-        <li><code>gta_basemap.pmtiles</code> — GTA vector street map</li>
-        <li><code>gta_transit.db</code> — 11 GTHA agency schedules &amp; transfers</li>
-        <li><code>gta_shapes.db</code> — 3,319 / 3,329 road-snapped route shapes</li>
-        <li><code>gta_addresses.db</code> — 989,215 addresses + 50,933 stores &amp; POIs</li>
-        <li><code>gta_walk_graph.db</code> — walkable pedestrian street network</li>
-      </ul>
-    </td>
-  </tr>
-</table>
+**Zero `INTERNET` permission. Zero `ACCESS_BACKGROUND_LOCATION`. Zero background services.**
+
+Your phone's operating system physically blocks this app from making network connections—it cannot phone home, send analytics, or leak your searches or location.
+
+- `gta_basemap.pmtiles` — GTA vector street map
+- `gta_transit.db` — 11 GTHA agency schedules & transfers
+- `gta_shapes.db` — 3,319 / 3,329 road-snapped route shapes
+- `gta_addresses.db` — 989,215 addresses + 50,933 stores & POIs
+- `gta_walk_graph.db` — walkable pedestrian street network
+
+<p align="center">
+  <img src="screenshots/07_about_offline_privacy.png" width="260" alt="About &amp; Data Sources screen listing all 5 offline databases and Last ride home toggle" />
+</p>
 
 <details>
 <summary><b>Verify APK Permissions &amp; SHA-256 Checksums Yourself (<code>aapt2</code> &amp; <code>apksigner</code>)</b></summary>
