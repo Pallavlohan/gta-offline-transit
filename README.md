@@ -17,7 +17,7 @@
 
 <h3>
   <a href="https://github.com/Pallavlohan/gta-offline-transit/releases/latest">
-    ⬇️ Download GTA Offline Transit v1.0.0 (Android APK · 144 MB All-in-One)
+    ⬇️ Download GTA Offline Transit v1.1.0 (Android APK · 144 MB All-in-One)
   </a>
 </h3>
 
@@ -82,6 +82,11 @@
   </tr>
 </table>
 
+<p align="center">
+  <img src="screenshots/08_live_grey_traveled.png" width="260" alt="Live GPS tracking turning completed walk dots, traveled bus segments, and passed stops muted grey behind the live location dot" /><br />
+  <b>New in v1.1.0: Live Grey Traveled Route &amp; Dimmed Passed Stops</b>
+</p>
+
 ---
 
 ## Built for Daily GTA Commuters
@@ -89,7 +94,7 @@
 - **Door-to-door offline routing (`Best` / `Fastest` / `Less walking` / `Fewer transfers` + `Leave` / `Arrive` / `Last`):** Covers all **11 GTHA agencies** including **TTC (with Line 5 Eglinton &amp; Line 6 Finch West)**, GO Transit, UP Express, MiWay, Brampton Transit (Züm), YRT (Viva), DRT, Oakville, Burlington, Milton, and HSR (`28,657` stops · `746` routes · `3,329` patterns · `322,507` trips).
 - **Familiar Google Maps muscle memory:** Tap any street stop &rarr; Departures &rarr; full curved route map (`99.7%` road-following shapes) with horizontal departure time tabs and exact branch letters (`96B`, `927B / 927C`, `50A`).
 - **Find anything offline (`< 50 ms`):** Instant search across **989,215 street addresses** and **50,933 stores &amp; landmarks** (Tim Hortons, Walmart, pharmacies, colleges) with typo tolerance and walkable street paths.
-- **Ride hands-free:** Heading-Up live compass cone, Saved Places, and foreground GPS tracking down the vertical stop rail with a **1-stop exit vibration**.
+- **Ride hands-free (`v1.1.0`):** Google Maps-style live grey traveled route line and dimmed passed stops behind your GPS dot (loop-safe on out-and-back bus routes), Heading-Up live compass cone, Saved Places, and foreground GPS tracking down the vertical stop rail with a **1-stop exit vibration**.
 - **Never miss the last ride home:** Automatic 0%-battery check after 8:00 p.m. when you're &gt;1 km from Home, offering a 1-tap local alarm 10 minutes before you must leave.
 
 ---
@@ -107,7 +112,7 @@
 
 ## 3-Step Install (10 Seconds)
 
-1. **Download:** Grab `GTA-Offline-Transit-v1.0.0-arm64.apk` (`143.78 MiB`) from **[Latest Release](https://github.com/Pallavlohan/gta-offline-transit/releases/latest)**.
+1. **Download:** Grab `GTA-Offline-Transit-v1.1.0-arm64.apk` (`143.78 MiB`) from **[Latest Release](https://github.com/Pallavlohan/gta-offline-transit/releases/latest)**.
 2. **Install:** Tap the downloaded `.apk` and allow installs from your browser or Files app.
 3. **Ride offline:** Open once (~2 sec automatic offline unpack) and plan anywhere in Airplane Mode.
 
@@ -135,7 +140,7 @@ Your phone's operating system physically blocks this app from making network con
 <summary><b>Verify APK Permissions &amp; SHA-256 Checksums Yourself (<code>aapt2</code> &amp; <code>apksigner</code>)</b></summary>
 
 ```text
-$ aapt2 dump permissions GTA-Offline-Transit-v1.0.0-arm64.apk
+$ aapt2 dump permissions GTA-Offline-Transit-v1.1.0-arm64.apk
 package: com.gta.offlinetransit
 uses-permission: name='android.permission.ACCESS_FINE_LOCATION'
 uses-permission: name='android.permission.ACCESS_COARSE_LOCATION'
@@ -149,7 +154,7 @@ uses-permission: name='com.gta.offlinetransit.DYNAMIC_RECEIVER_NOT_EXPORTED_PERM
 
 *(Note: `ACCESS_NETWORK_STATE` / `ACCESS_WIFI_STATE` are standard AndroidX/MapLibre library metadata flags; `android.permission.INTERNET`, `ACCESS_BACKGROUND_LOCATION`, `SCHEDULE_EXACT_ALARM`, and `RECEIVE_BOOT_COMPLETED` are explicitly stripped/absent.)*
 
-- **v1.0.0 APK SHA-256:** `c88e0c4a8dccdfaccf7d0a2dde621b6c133cf7f0cb02e62803346e33eca2d080`
+- **v1.1.0 APK SHA-256:** `1200a3b401befafb018c14abd9096a732522268ce88e0f7db8b20d152ee489e7`
 - **Release Certificate SHA-256:** `84b72575610dc24b340a4854f53b24befe0d263ef3f7a1d416e048562004886b`
 
 </details>
